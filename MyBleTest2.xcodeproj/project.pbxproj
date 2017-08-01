@@ -21,6 +21,11 @@
 		088DA5AB19986AD300F61955 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088DA58D19986AD300F61955 /* UIKit.framework */; };
 		088DA5B319986AD300F61955 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 088DA5B119986AD300F61955 /* InfoPlist.strings */; };
 		088DA5B519986AD300F61955 /* MyBleTest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DA5B419986AD300F61955 /* MyBleTest2Tests.m */; };
+		8488F0F91E8CA725005947E7 /* BlePeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488F0F81E8CA725005947E7 /* BlePeripheral.m */; };
+		90F0CA5B1EFCC30B00F6307D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F0CA571EFCC30B00F6307D /* Default-568h@2x.png */; };
+		90F0CA5C1EFCC30B00F6307D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F0CA581EFCC30B00F6307D /* Default.png */; };
+		90F0CA5D1EFCC30B00F6307D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F0CA591EFCC30B00F6307D /* Default@2x.png */; };
+		90F0CA5E1EFCC30B00F6307D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 90F0CA5A1EFCC30B00F6307D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		088DA5B019986AD300F61955 /* MyBleTest2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBleTest2Tests-Info.plist"; sourceTree = "<group>"; };
 		088DA5B219986AD300F61955 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		088DA5B419986AD300F61955 /* MyBleTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBleTest2Tests.m; sourceTree = "<group>"; };
+		8488F0F81E8CA725005947E7 /* BlePeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlePeripheral.m; sourceTree = "<group>"; };
+		8488F0FA1E8CA777005947E7 /* BlePeripheral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlePeripheral.h; sourceTree = "<group>"; };
+		84C478251E812EB100F8E743 /* MyBleTest2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyBleTest2.entitlements; sourceTree = "<group>"; };
+		90F0CA571EFCC30B00F6307D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		90F0CA581EFCC30B00F6307D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		90F0CA591EFCC30B00F6307D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90F0CA5A1EFCC30B00F6307D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +124,12 @@
 		088DA58F19986AD300F61955 /* MyBleTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				84C478251E812EB100F8E743 /* MyBleTest2.entitlements */,
+				08EEAB61199D9847006F2BBA /* iPad */,
 				088DA59819986AD300F61955 /* WWDAppDelegate.h */,
 				088DA59919986AD300F61955 /* WWDAppDelegate.m */,
+				8488F0F81E8CA725005947E7 /* BlePeripheral.m */,
+				8488F0FA1E8CA777005947E7 /* BlePeripheral.h */,
 				088DA59B19986AD300F61955 /* Main.storyboard */,
 				088DA59E19986AD300F61955 /* WWDViewController.h */,
 				088DA59F19986AD300F61955 /* WWDViewController.m */,
@@ -126,6 +142,10 @@
 		088DA59019986AD300F61955 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				90F0CA571EFCC30B00F6307D /* Default-568h@2x.png */,
+				90F0CA581EFCC30B00F6307D /* Default.png */,
+				90F0CA591EFCC30B00F6307D /* Default@2x.png */,
+				90F0CA5A1EFCC30B00F6307D /* README.md */,
 				088DA59119986AD300F61955 /* MyBleTest2-Info.plist */,
 				088DA59219986AD300F61955 /* InfoPlist.strings */,
 				088DA59519986AD300F61955 /* main.m */,
@@ -150,6 +170,13 @@
 				088DA5B119986AD300F61955 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08EEAB61199D9847006F2BBA /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +227,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = mycj.wwd;
 				TargetAttributes = {
+					088DA58519986AD300F61955 = {
+						DevelopmentTeam = GG438KSY32;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
 					088DA5A619986AD300F61955 = {
 						TestTargetID = 088DA58519986AD300F61955;
 					};
@@ -230,8 +265,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				088DA5A219986AD300F61955 /* Images.xcassets in Resources */,
+				90F0CA5D1EFCC30B00F6307D /* Default@2x.png in Resources */,
+				90F0CA5C1EFCC30B00F6307D /* Default.png in Resources */,
 				088DA59419986AD300F61955 /* InfoPlist.strings in Resources */,
 				088DA59D19986AD300F61955 /* Main.storyboard in Resources */,
+				90F0CA5B1EFCC30B00F6307D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				088DA59619986AD300F61955 /* main.m in Sources */,
+				8488F0F91E8CA725005947E7 /* BlePeripheral.m in Sources */,
+				90F0CA5E1EFCC30B00F6307D /* README.md in Sources */,
 				088DA5A019986AD300F61955 /* WWDViewController.m in Sources */,
 				088DA59A19986AD300F61955 /* WWDAppDelegate.m in Sources */,
 			);
@@ -334,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,10 +417,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GG438KSY32;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyBleTest2/MyBleTest2-Prefix.pch";
 				INFOPLIST_FILE = "MyBleTest2/MyBleTest2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = kirincore.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +435,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GG438KSY32;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyBleTest2/MyBleTest2-Prefix.pch";
 				INFOPLIST_FILE = "MyBleTest2/MyBleTest2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				PRODUCT_BUNDLE_IDENTIFIER = kirincore.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +507,7 @@
 				088DA5BA19986AD300F61955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		088DA5BB19986AD300F61955 /* Build configuration list for PBXNativeTarget "MyBleTest2Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +516,7 @@
 				088DA5BD19986AD300F61955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
